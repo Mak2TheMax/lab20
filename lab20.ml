@@ -4,7 +4,7 @@ type size = int * int ;;
 open Graphics ;;
 
 (* show the image *)
-let depict (img : image_type) : unit =
+let depict img =
   open_graph "";
   resize_window (List.length (List.hd img)) (List.length img);
   (* create an array type from the 2D list *)
